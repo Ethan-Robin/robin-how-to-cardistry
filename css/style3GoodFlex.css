@@ -1,0 +1,237 @@
+/* Body styles */
+body {
+    background-color: rgb(243, 234, 224);
+    overflow-x: hidden;
+}
+
+/* Heading styles */
+h1, h2 {
+    margin-top: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: -0.05rem;
+}
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+
+/* Subheading styles */
+h3, h4 {
+    margin-top: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.2rem;
+}
+
+h3 {
+    font-size: 0.75rem;
+}
+
+h4 {
+    font-size: 0.5rem;
+    text-indent: 2em;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 0.75rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.1rem;
+}
+
+/* Flexbox parent container */
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Image size control */
+.Image { 
+    width: auto;
+    height: auto;
+    /* max-width: 600px;  */
+}
+
+/* Blockquote styles */
+blockquote {
+    font-style: italic;
+    text-indent: -0.45em;
+    quotes: "“" "”" "‘" "’";
+}
+blockquote::before {
+    content: open-quote;
+}
+blockquote::after {
+    content: close-quote;
+}
+
+
+/*List Appearance*/
+#navcontainer ul{
+    margin-left: 0px;
+    padding: 20px;
+}
+
+
+/* Button container */
+button-cont {
+    padding: 20px;
+    margin: 20px;
+    text-transform: uppercase;
+    background-color: white;
+    border: 0;
+    display: inline-block;
+    position: fixed;
+}
+
+/* Content section */
+.content {
+    /* float: left;
+    margin-left: 25%;
+    width: 77%;
+    margin-top: 10px;
+    position: absolute; */
+    /* background-color: red; */
+    margin-left: 145px;
+
+}
+
+/* Additional styling for grip sections */
+.grip-section {
+    margin-bottom: 5%;
+    /* width: 100%;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column; */
+
+}
+
+/* Back to top button */
+.backtotop {
+    position: fixed;
+    padding: 1px;
+    bottom: 25px;
+    font-size: 2rem;
+    width: 16.66%;
+    max-width: 100px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sticky position for table of contents */
+.cont {
+    float: left;
+    padding: 10px;
+    top: 34px;
+    width: 110px;
+    position: fixed;
+    background-color: white;
+
+}
+
+/* Absolute positioning */
+div.absolute {
+    position: absolute;
+    left: 22%;
+    border: 1px solid blue;
+}
+
+/* Relative positioning */
+div.relative {
+    position: relative;
+    border: 1px solid blue;
+    margin-left: 22%;
+}
+
+/* Link styles */
+a:link {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.08rem;
+}
+
+a:visited {
+    color: rgb(115, 105, 79);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a:hover {
+    color: rgb(235, 210, 147);
+    transition: 0.5s;
+}
+
+/* Smooth scrolling behavior */
+* {
+    scroll-behavior: smooth;
+}
+
+
+
+/*The flexbox for the Head*/
+
+.head {
+    display: flex;
+    flex-direction: column;
+}
+.head-text {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    gap: 5%;
+}
+.head-column-deats {
+    width: 50%;
+    padding: 2%;
+}
+@media (max-width: 376px) {
+    .head-text {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
+@media (max-width: 376px) {
+    .head-column-deats {
+        width: auto;
+    }
+}
+
+/*Flex information for the Subhead*/
+
+.subhead {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.subhead-items {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    gap: 5%;
+}
+.subhead-column-deats {
+    width: 40%;
+    padding: 2%;
+}
+@media (max-width: 376px) {
+    .subhead-items {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
+@media (max-width: 376px) {
+    .subhead-column-deats {
+        width: auto;
+    }
+}

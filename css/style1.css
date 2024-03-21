@@ -1,0 +1,183 @@
+/*this is an example of externeral css */
+body{
+    background-color: rgb(243, 234, 224);
+}
+
+h1, h2 {
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: -0.05rem;
+}
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+
+h3, h4 {
+    margin-top: 1rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.2rem;
+}
+
+h3 {
+    font-size: 0.75rem;
+}
+h4 {
+    font-size: .5rem;
+    text-indent: 2em;
+}
+
+
+p {
+    font-size: 0.75rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.1rem;
+    }
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*Image size control for the general image*/
+img.Image { width: 100%;}
+div#ImageContainer { max-width: 600px; }
+
+
+
+/* This will define how I have my quotes styled, vs my paragraphs*/
+blockquote {
+    font-style: italic;
+    text-indent: -0.45em;
+    quotes: "“" "”" "‘" "’";
+  }
+  blockquote::before {
+      content: open-quote;
+  }
+  blockquote::after {
+      content: close-quote;
+  }
+
+
+/*Here is the table of contents button*/
+button-cont {
+    padding: 20px;
+    margin: 20px;
+    /*filter: drop-shadow(2px 2px 3px rgb(220, 212, 172)e);
+    font-family: monospace;*/
+    text-transform: uppercase;
+    background-color: white;
+    border: 0;
+    display: inline-block;
+    position: fixed;
+}
+
+.backtotop {
+    position: fixed;
+    padding: 1px;
+    bottom: 10px;
+    font-size: 2rem;
+    width: 16.66%;
+    max-width: 100px;
+    height: 30px;
+    background-color: rgb(237, 224, 190);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container {
+    margin: auto;
+    width: 80vw;
+    padding: 20px;
+}
+
+/*Making the content float to the furthest left*/
+.column {
+    float: left;
+    width: 50%;
+    width: auto;
+  }
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+.content {
+    float: right;
+    width: 77%; 
+}
+
+/* Additional styling for grip sections */
+.grip-section {
+    margin-bottom: 200px; /* Add some space between grip sections */
+}
+
+
+
+/*making a division position sticky */
+.sticky {
+    float: left;
+    padding: 2%;
+    top: 10px;
+    width: 16.66%;
+    max-width: 110px;
+    position: sticky;
+    background-color: white;
+    z-index: 1000;
+    /*filter: drop-shadow(2px 2px 20px rgb(255, 235, 192));*/
+}
+
+/*This will allow me to position different things in different spots*/
+div.absolute {
+    position: absolute;
+    left: 22%;
+    border: 1px solid blue;
+    z-index: 200;
+}
+
+/*This will allow me to position things in a way that is not final but holds its form*/
+div.relative {
+    position: relative;
+    border: 1px solid blue;
+    margin-left: 22%;
+}
+
+/*Link info*/
+a:link {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
+a:visited {
+    color: rgb(115, 105, 79);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a:hover {
+    color: rgb(221, 187, 100);
+    transition: 1s;
+}
+
+
+
+* {
+    scroll-behavior: smooth;
+}
